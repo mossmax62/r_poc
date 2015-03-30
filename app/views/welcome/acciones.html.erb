@@ -1,0 +1,17 @@
+<h1>Informacion sobre acciones</h1>
+<div>
+	<% @data.each do |actual| %>
+	<div>
+	<i class="fa fa-money fa-3x"></i>
+	<span>Nombre Accion</span><br>
+	<%= actual.symbol %>
+	<%= actual.name %>
+	<br><span>ASK</span><br>
+	<%= actual.ask %>
+	<br><span>BID</span><br>
+	<%= actual.bid %>
+	<br><span>Ultima fecha de transaccion</span><br>
+	<%= actual.last_trade_date %>
+	</div>
+	<% end %>
+</div>

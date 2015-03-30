@@ -59,6 +59,9 @@ SimpleNavigation::Configuration.run do |navigation|
     primary.item :posts, 'Posts'   do |sub_nav|
       sub_nav.item :posts, 'Posts sub', posts_path
     end
+    primary.item 'Web Services','Web Services' do |sub_nav|
+      sub_nav.item 'Acciones','Acciones', welcome_acciones_path
+    end
       
     
 
